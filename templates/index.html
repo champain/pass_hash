@@ -1,0 +1,42 @@
+$def with (content)
+$var cssfiles: ./static/dist/css/bootstrap.min.css ./static/dist/css/cover.css
+
+
+ <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Results</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="/">Try Again</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+$if content:           
+	  <h1 class="cover-heading">$content</h1>
+$else:
+	   <p class="lead">Something went wrong. Tell Jacob.</p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Password hash creator by <a href=jacob@arin.net>Jacob</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+

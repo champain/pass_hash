@@ -1,0 +1,9 @@
+$def with (content)
+$var cssfiles: ./static/dist/css/bootstrap.min.css
+
+<div class="container">
+$if content:
+    <em>$content</em>
+$else:
+    <em>Something went wrong. Tell Jacob.</em>
+</div>
