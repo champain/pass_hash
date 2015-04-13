@@ -21,8 +21,8 @@ class Index(object):
     
     def POST(self):
         form = web.input()
-        passw =  crypt.crypt(form.passw, '$1$/Bhh.Y3l$')
-        pass_check = crypt.crypt(form.passwcheck, '$1$/Bhh.Y3l$')
+        passw =  crypt.crypt(form.passw, '$1$/Bhh.EhJkjj$')
+        pass_check = crypt.crypt(form.passwcheck, '$1$/Bhh.EhJkjj$')
         if  passw == pass_check:
             content = "Passwords match."
             try:
